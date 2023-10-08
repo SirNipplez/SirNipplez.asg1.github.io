@@ -1,0 +1,170 @@
+            <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        body {
+          background-color: lightgray;
+          padding: 35px;
+          font-family: sans-serif;
+        }
+        
+        div.mainDiv{
+            width: 910px;
+            text-align: center;
+            box-shadow: rgba(100, 100, 111, 0.6) 0px 7px 29px 0px;
+            /* found at https://getcssscan.com/css-box-shadow-examples */
+            background-color: lightgray;
+        }
+        button{
+            background-color: #3a6ba5;
+            color: white;
+            border: none; 
+            text-align: center;
+            padding: 14px 100px;
+            border-radius: 4px;
+            margin-top: 20;
+        }
+        button:hover{
+            background-color: #437cbf;
+        }
+        a:link{
+            color: #437cbf;
+        }
+        a:visited{
+            color: cadetblue;
+        }
+
+
+
+
+        div.studentBlock{
+            display: inline-block;
+            width: 300px;
+            text-align: center;
+            font-weight: 300;
+            font-size: 18px;
+            background-color: white;
+            list-style-type: none;
+        }
+        div.studentBlock > ul{
+            list-style-type: none;
+            padding: 0px;
+        }
+        div.studentBlock > ul >li{
+            font-size: 18;
+            font-weight: 300;
+            padding: 15;
+        }
+        div.studentBlock li:nth-child(2n+1){
+            background-color: rgba(47, 59, 64, 0.35); 
+        }
+        div.studentBlock h2{
+            font-size:24px;
+            font-weight: 600;
+        }
+        div.standard{
+            background-color: #2f4f4f;
+            color: white;
+        }
+        div.studentBlock li > strong{
+            font-weight: 800;
+            
+        }
+        .money{
+            font-size: 36px; 
+            font-weight: 800;
+        }
+
+
+
+        div.confidence{
+            background-color: #2f4f4f;
+            width: 910px;
+            color: white;
+            margin-top: 30px;
+             }
+        div.confidence > ul{
+            list-style-type: none;
+            padding-left: 15px;
+        }
+        div.confidence > ul > li{
+            background-image: url("checkmark.svg");
+            background-size: 24px;
+            background-repeat: no-repeat;
+            padding: 10;
+            padding-left: 24px;
+
+        }
+        div.confidence > *{
+            margin-left: 40;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="mainDiv">
+        <h1 style = "padding-top: 15px; margin-bottom: 5px;" >
+            <strong style="font-size: 36px;">Assignment #1 Student Plans</strong>
+        </h1>
+        <div class="studentBlock budget">
+            <h2>Budget Student</h2>
+            <ul class = "budget">
+                <li style = "background-color: #5bb189;">
+                    <strong class="money">$10</strong> /mo
+                </li>
+                <li><strong>512MB</strong> Student Memory</li>
+                <li><strong>1TB</strong> Patience</li>
+                <li><strong>20GB</strong> Exam Recall</li>
+                <li><strong>0</strong> Quiz A Grades</li>
+                <li><a href="page2.html"><button type="formlink" > View Form</button></a></li>
+            </ul>
+        </div>
+        <div class="studentBlock standard">
+            <h2>Standard Student</h2>
+            <ul class = "standard">
+                <li style = "background-color: #4b0082;">
+                    <strong class="money">$25</strong> /mo
+                </li>
+                <li><strong>1GB</strong> Student Memory</li>
+                <li><strong>2TB</strong> Patience</li>
+                <li><strong>40GB</strong> Exam Recall</li>
+                <li><strong>2</strong> Quiz A Grades</li>
+                <li><a href="page2.html"><button type="formlink" > View Form</button></a></li>
+            </ul>
+        </div>
+        <div class="studentBlock scholarship">
+            <h2>Scholarship Student</h2>
+            <ul class = "scholarship">
+                <li style = "background-color: #EC632A;">
+                    <strong class="money"> $50</strong> /mo
+                </li>
+                <li><strong >16GB</strong> Student Memory</li>
+                <li><strong>6TB</strong> Patience</li>
+                <li><strong>80GB</strong> Exam Recall</li>
+                <li><strong>3</strong> Quiz A Grades</li>
+                <li><a href="page2.html"><button type="formlink" > View Form</button></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class = "confidence">
+        <h1 style="padding-top: 20px; margin-bottom: 5px;">Learn in confidence</h1>
+        <div>All our marking plans come with the same set of award-winning features:</div>
+        <ul style="padding-bottom: 20px;">
+            <li>Professor anti-grumpiness filter</li>
+            <li>Promise not to use ChatGPT</li>
+            <li>Complimentary copy of<strong>
+                <a href="https://www.pearson.com/en-ca/subject-catalog/p/fundamentals-of-web-development/P200000003214/9780136792857"
+                target="_blank">  
+                    Fundimentals of Web Development, 3rd Edition</a></strong>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

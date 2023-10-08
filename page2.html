@@ -1,0 +1,213 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="variables-palette-7.css">
+    <style>
+
+        body {
+            width: 910px;
+            padding: 20px;
+            font-family: sans-serif;
+            font-weight: 300;
+            
+        }
+        .title {
+            text-align: center;
+            color: white;
+            background-color: #0A6C74;
+            font-size: 20PX;
+            padding: 1px;
+            font-weight: 500;
+            margin: 10px;
+        }
+        div {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        /* Styling for the textfields/dropdowns used*/
+        .searchItem{
+            height: 30px;
+            border-radius: 3px;
+            border-width: 0;
+        }
+        
+
+        /*Mass colour editing for html blocks*/
+        .searchbar {
+            background-color: #E8E6E1;
+        }
+        .paintings {
+            background-color: #E8E6E1;
+            
+        }
+        .paintTitle {
+            background-color: #14919B;
+            color: white;
+        }
+        .rowtitle {
+            background-color: #E0FCFF;
+        }
+
+        .bulkBar {
+            background-color: #E8E6E1
+        }
+
+
+        table{
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+        td{
+            padding-right: 15px;
+        }
+        tr:nth-child(1n+2){
+            border-bottom: solid;
+            border-color: #B8B2A7;
+            border-bottom-width: 1px;
+            height: 100px;
+        }
+        tr:last-child{
+            border-bottom-width: 0;
+        }
+        td button {
+            border-radius: 4px;
+            border-color: #D3CEC4;
+            border-style: solid;
+            padding: 3;
+        }
+        td button:first-child{
+            background-color: #54D1DB;
+            border-color: #54D1DB;
+        }
+        button img {
+            width: 16px;
+        }
+        .pic {
+            width: 80px;
+        }
+
+
+        .finalSubmit{
+            background-color: #14919B;
+            border-radius: 3px;
+            border-width: 0;
+            color: white;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="title">
+        <p style="margin-top: 3px; margin-bottom: 3px;">Advanced Art Work Search</p>
+    </div>
+
+    <form method="POST"action="http://www.randyconnolly.com/tests/process.php">
+        <div class="searchbar">
+
+            <input class="searchItem" type="text" name="search" placeholder="Search">
+            <label>Subject:</label>
+            <input type="radio" name="subject" id="history" value="History">
+            <label for="history">History</label>
+            <input type="radio" name="subject" id="person" value="Person">
+            <label for="person">Person</label>
+            <input type="radio" name="subject" id="landscape" value="Landscape">
+            <label for="landscape">Landscape</label>
+
+            <select class="searchItem" id="filter" name="filter" >
+                <option value="0">Baroque</option>
+                <option value="1">Renaissance</option>
+                <option value="2">Realism</option>
+            </select>
+
+        </div>
+
+        <div class="paintings">
+
+            <table >
+                <caption class="paintTitle">
+                    <p style="margin-top: 3px; margin-bottom: 3px;">Paintings</p>
+                </caption>
+                <tr class="rowTitle">
+                    <td> </td>
+                    <td> </td>
+                    <td>Title</td>
+                    <td>Artist</td>
+                    <td>Year</td>
+                    <td>Genre</td>
+                    <td>Actions</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="index[]" value="10"> </td>
+                    <td><img src="125010.jpg" class="pic"></td>
+                    <td><i>Portrait of Alda Christina Assink</i></td>
+                    <td>Kruseman, Jan</td>
+                    <td>1833</td>
+                    <td>Realism</td>
+                    <td>
+                        <button type="button"><img src="edit.png"></button>
+                        <button type="button"><img src="archive.png"></button>
+                        <button type="button"><img src="delete.png"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="index[]" value="20"></td>
+                    <td><img src="125020.jpg" class="pic"> </td>
+                    <td><i>Portrait of William II, King of the Netherlands</i></td>
+                    <td>Kruseman, Jan</td>
+                    <td>1839</td>
+                    <td>Realism</td>
+                    <td>
+                        <button type="button"><img src="edit.png"></button>
+                        <button type="button"><img src="archive.png"></button>
+                        <button type="button"><img src="delete.png"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="index[]" value="30"></td>
+                    <td><img src="130020.jpg" class="pic"> </td>
+                    <td><i>Three girls from the Amsterdam Orphanage</i> </td>
+                    <td>Schwartze, Therese</td>
+                    <td>1885</td>
+                    <td>Realism</td>
+                    <td>
+                        <button type="button"><img src="edit.png"></button>
+                        <button type="button"><img src="archive.png"></button>
+                        <button type="button"><img src="delete.png"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="index[]" value="430"></td>
+                    <td><img src="127010.jpg" class="pic"> </td>
+                    <td><i>The Windmill at Wijk Bij Duurstede</i></td>
+                    <td>Ruisdael, Jacob van </td>
+                    <td>1670</td>
+                    <td>Dutch Golden Age</td>
+                    <td>
+                        <button type="button"><img src="edit.png"></button>
+                        <button type="button"><img src="archive.png"></button>
+                        <button type="button"><img src="delete.png"></button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="bulkBar">
+            <select id="bulk action" name="actions" style="height: 24px;" class="searchItem">
+                <option value="0">Archive</option>
+                <option value="1">Edit</option>
+                <option value="2">Delete</option>
+                <option value="3">Collection</option>
+            </select>
+            <button type="submit" class="finalSubmit searchItem" >Apply To All</button>
+        </div>
+
+    </form>
+</body>
+
+</html>
